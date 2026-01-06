@@ -1,0 +1,102 @@
+/* Reset simple */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+/* Panel de controles */
+.panel-controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.panel-controles label {
+  min-width: 140px;
+}
+
+.panel-controles input[type="url"] {
+  flex: 1;
+  padding: 8px;
+}
+
+.panel-controles button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Mensajes */
+.mensaje {
+  width: 100%;
+  margin-top: 5px;
+  color: #c0392b;
+}
+
+/* Galería */
+.galeria-contenedor h2 {
+  margin-bottom: 10px;
+}
+
+.galeria {
+  display: grid;               /* grid requerido */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;           /* que no se deformen */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen seleccionada */
+.galeria img.seleccionada {
+  outline: 4px solid #2980b9;  /* resalte claro */
+  box-shadow: 0 0 15px rgba(41, 128, 185, 0.8);
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
+
+/* Responsive extra para pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .panel-controles {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .panel-controles button {
+    width: 100%;
+  }
+}

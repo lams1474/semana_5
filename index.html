@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 5 - Galería Interactiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Galería Interactiva con JavaScript</h1>
+    <p>Agregar, seleccionar y eliminar imágenes usando DOM y eventos.</p>
+  </header>
+
+  <main>
+    <!-- Controles -->
+    <section class="panel-controles">
+      <label for="urlImagen">URL de la imagen:</label>
+      <input type="url" id="urlImagen" placeholder="https://ejemplo.com/imagen.jpg">
+      <button id="btnAgregar">Agregar imagen</button>
+      <button id="btnEliminar">Eliminar imagen seleccionada</button>
+      <p id="mensaje" class="mensaje"></p>
+    </section>
+
+    <!-- Galería -->
+    <section class="galeria-contenedor">
+      <h2>Galería</h2>
+      <div id="galeria" class="galeria">
+        <!-- Aquí JS insertará las <img> -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Semana 5 - Desarrollo de Aplicaciones Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
