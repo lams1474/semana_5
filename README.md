@@ -34,7 +34,7 @@ En `script.js` se utilizan:
   - `addEventListener('click', ...)` para botones e imágenes.
   - `addEventListener('keydown', ...)` para capturar Enter en el input.[file:1]
 
-Estas funcionalidades corresponden a los *Fundamentos de JavaScript: manipulación del DOM y eventos*.[file:1]
+Estas funcionalidades corresponden a los contenidos de la Unidad 2, Tema 2.1: *JavaScript para aplicaciones web* y Subtema 2.1.1: *Fundamentos de JavaScript: manipulación del DOM y eventos*.[file:1]
 
 ## Cómo ejecutar el proyecto
 
